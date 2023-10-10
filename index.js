@@ -18,17 +18,17 @@ app.use('/',require('./routes/test'))
 // routes for the user 
 app.use('/app/login',require('./routes/get/Login'))
 app.use('/app/signup',require('./routes/create/Signup'))
-app.use('/app/deleteuser',require('./routes/delete/deleteaccount'))
+app.use('/app/deleteuser',require('./routes/delete/deleteuser.js'))
 app.use('/app/updateuser',require('./routes/update/updateuser'))
 
 // routes for the adding a shop
 app.use('/app/shoplogin',require('./routes/get/Getshop'))
 app.use('/app/shopsignup',require('./routes/create/Shop'))
-app.use('/app/deleteshop',require('./routes/delete/deleteshop'))
+app.use('/app/deleteshop',require('./routes/delete/deletestore.js'))
 app.use('/app/updateshop',require('./routes/update/updateshop'))
 
 // routes for the adding a shop
-app.use('/app/getproducts',require('./routes/get/Getproducts'))
+app.use('/app/getproducts',require('./routes/get/getproduct.js'))
 app.use('/app/addproducts',require('./routes/create/Product'))
 app.use('/app/deleteproducts',require('./routes/delete/deleteproduct'))
 app.use('/app/updateproducts',require('./routes/update/updateproduct'))
